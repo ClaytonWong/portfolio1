@@ -117,3 +117,6 @@ parts of my code.
 
 To see more of my designs on Figma, use the following link.
 https://www.figma.com/file/MlmBGrWQVEGnExpPOuqw86p0/portfolio
+
+site deployed at:
+https://decorator-lorna-61415.netlify.com.
