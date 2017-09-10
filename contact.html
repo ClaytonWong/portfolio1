@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/images/w-e-h.ico">
+        <title>Contact</title>
+    </head>
+    <body>
+        <!-- Items in "desktop-menu" class will only be shown -->
+        <!-- in desktop mode -->
+        <div class="desktop-menu">
+            <a href="index.html">home</a>
+            <a href="bio.html">bio</a>
+            <a href="resume.html">resume</a>
+            <a href="projects.html">projects</a>
+            <a href="connect.html">connect</a>
+            <a href="#contact">contact</a>
+        </div>
+        
+        <!-- Items in contact class will be shown regardless of mode -->
+        <!-- -->
+        <div class="contact" id="contact">
+            <p class="page-name">Contact</p>
+            <form>
+                
+                <div class="contact-label">
+                    <label  for="firstname">First Name</label>
+                </div>
+                <div class="contact-boxes">
+                    <input type="text" id="firstname" name="firstname" placeholder="Your first name..">    
+                </div>
+
+                <div class="contact-label">
+                    <label  for="lastname">Last Name</label>
+                </div>
+                <div class="contact-boxes">
+                    <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+                </div>
+
+                <div class="contact-label">
+                    <label  for="email">Email</label>
+                </div>
+                <div class="contact-boxes">
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                </div>
+
+                <div class="contact-label">
+                    <label for="message">Message</label>
+                </div>
+                <div class="contact-boxes">
+                    <textarea>Type your message here</textarea>
+                </div>
+
+                <div class="submit-box">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+        
+        <!-- Items in "non-desktop-menu" class will only be shown -->
+        <!-- in mobile phone or tablet mode -->
+        <div class="non-desktop-menu">
+            <div class="menu-area">menu</div>
+            <div class="slide-up-content">
+                <a href="bio.html">bio</a>
+                <a href="resume.html">resume</a>
+                <a href="projects.html">projects</a>
+                <a href="connect.html">connect</a>
+                <a href="#contact">contact</a>
+                <a href="index.html">home</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,616 @@
+/* uses colours from 'Zen and Tea' colour scheme from Adobe */
+/* #10222B a shade of black */
+/* #95AB63 a shade of green */
+/* #BDD684 a lighter shade of green */
+/* #E2F0D6 a pale shade of green */
+/* #F6FFE0 a shade of white */
+
+body
+{
+    background-color: #F6FFE0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hide desktop menu when not in that mode */
+div.desktop-menu
+{
+    visibility: hidden;
+}
+
+.page-name
+{   
+    color: #10222B;
+    font-size: 1.5rem;
+    text-indent: 5vw;
+}
+
+.greeting
+{
+    color: #10222B;
+    font-size: 1.5em; /* Set font size for greeting text to 40px */
+    margin-left: auto; /* Keep greeting text equal distance */
+    margin-right: auto; /* from left & right sides of window */
+
+    margin-top: 120px;/* Try to keep greeting text in top half*/
+                      /* of window */
+    max-width: 230px;
+    padding-bottom: 25px;
+}
+
+figure
+{
+    text-align: center;
+    padding-right: 25px;
+}
+
+.hero-text p
+{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.bio
+{   
+    /* Move bio futher up the screen and go over
+    hidden desktop menu text */
+    margin-top: -30px;
+    /* Hack to stop bottom menu bar from covering bio */ 
+    padding-bottom: 25px; 
+}
+
+.bio-text
+{   
+    color: #10222B;
+    font-size: 1.25rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.projects
+{   
+    /* Move projects futher up the screen and go over
+       hidden desktop menu text */
+    margin-top: -25px;
+    /* Hack to stop bottom menu bar from covering
+       contents of project */ 
+    padding-bottom: 40px; 
+}
+
+.projects-text
+{
+    color: #10222B;
+    font-size: 1.25rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.gnome-pic
+{
+    padding-left: 5vw;
+    padding-top: 9px;
+    width: 138px;
+    height: 137px;
+}
+
+.titlescreen
+{
+    padding-left: 5vw;
+    padding-top: 9px;
+    width: 208px;
+    height: 131px;
+}
+
+.resume
+{
+    color: #10222B;
+    /* This will stop bottom menu area from blocking text at */
+    /* end of resume                                         */
+    padding-bottom: 25px;
+}
+
+.indented-text
+{
+    text-indent: 1.6rem;
+}
+
+.underlined-section
+{
+    text-decoration: underline;
+    font-size: 1.125rem;
+}
+
+.underlined-section-other
+{
+    text-decoration: underline;
+    font-size: 1.125rem;
+    padding-top: 1rem;
+}
+
+.job
+{
+    padding-top: 1rem; /* Give spacing between jobs */
+}
+
+.bold-employer
+{   
+    font-weight: bold;
+    font-size: 1.0625rem;
+}
+
+.bold-duties
+{   
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+ul.duties
+{   /* Remove gaps above and below bullet points  */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bold-awards
+{   
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+ul.awards
+{   /* Remove gaps above and below bullet points  */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact
+{   
+    /* Move move contact page futher up the screen and go over
+    hidden desktop menu text */
+    margin-top: -25px; 
+    /* This will stop bottom menu area from blocking text at */
+    /* end of contacts page                                  */
+    padding-bottom: 50px;
+}
+
+.contact-label
+{
+    font-size: 1.25rem;
+    text-indent: 5vw;
+    margin-top: -13px;
+    margin-bottom: -1px;
+}
+
+.contact-boxes
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+input[type=text]
+{
+    width: 89%;
+    height: 35px;
+    padding: 2px;
+    display: inline-block;
+    border: 1px solid #10222B;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+textarea
+{
+    width: 89%;
+    height: 154px;
+    padding: 2px;
+    margin-top: 2px;;
+    border: 1px solid #10222B;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input[type=submit]
+{   
+    border: 1px #10222B solid;
+    background-color: #F6FFE0;
+    height: 39px;
+    width: 93px;
+    font-size: 1.25rem;
+    padding: 8px 15px 7px 16px;
+}
+
+.submit-box
+{
+    text-align: center;
+    margin-top: -18px;
+    margin-bottom: 3px;
+}
+
+.connect
+{   /* Move move contact page futher up the screen and go over
+    hidden desktop menu text */
+    margin-top: -25px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+.connect-link-top
+{
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+
+.connect-link-top a
+{
+    color: #10222B;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.connect-link
+{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.connect-link a
+{
+    color: #10222B;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.non-desktop-menu
+{
+    /* Move non-desktop-menu to bottom of window and have it take
+       up full width of window */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+}
+
+.menu-area
+{
+    /* Adjust appearence of non-desktop menu */
+    background-color: #E2F0D6;
+    color: #10222B;
+    border: 1px #BDD684 solid;
+    max-height: 3rem;
+    padding-top: 0.56rem;
+    padding-bottom: 0.62rem;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Slide up content is hidden by default */
+.slide-up-content
+{
+    display: none;
+    position: absolute;
+    background-color: #BDD684;
+    /* Slide up content to take up */
+    /* full width of window when it appears */
+    width: 100%; 
+    z-index: 1;  /* slide up content to go on top of other content*/
+    overflow: auto;
+    bottom: 100%;
+}
+
+/* Describe appearance of slide up menu*/
+.slide-up-content a
+{   
+    background-color: #BDD684;
+    color: #10222B;
+    border: 1px #10222B solid;
+    max-height: 3rem;
+    padding-top: 0.56rem;
+    padding-bottom: 0.62rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    display: block;
+}
+
+/* change color of slide up link on hover*/
+.slide-up-content a:hover
+{
+    background-color:#10222B;
+    color: #BDD684;
+}
+
+.non-desktop-menu:hover .slide-up-content
+{
+    display: block;
+}
+
+.non-desktop-menu:hover .menu-area
+{
+    background-color: #E2F0D6;
+}
+
+@media screen and (min-width: 768px)
+{
+    .page-name
+    {   
+        color: #10222B;
+        font-size: 3rem;
+        text-indent: 5vw;
+    }
+
+    /* Increase size of greeting in tablet mode */
+    .greeting
+    {
+        max-width: 438px;
+        font-size: 2.8125rem;
+        margin-top: 208px;
+        padding-bottom: 50px;
+    }
+
+    .bio
+    {   
+        /* Move bio futher up the screen and go over
+        hidden desktop menu text */
+        margin-top: -25px;
+        /* Hack to stop bottom menu bar from covering bio */ 
+        padding-bottom: 50px; 
+    }
+
+    .bio-text
+    {   
+        font-size: 2.5rem;
+        max-width: 632px;
+    }
+
+    .projects
+    {   
+        /* Move projects futher up the screen and go over
+           hidden desktop menu text */
+        margin-top: -50px;
+        padding-top: 45px;
+        /* Hack to stop bottom menu bar from covering
+           contents of project */ 
+        padding-bottom: 80px; 
+    }
+    
+    .projects-text
+    {
+        font-size: 2.5rem;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-bottom: 5px;
+    }
+        
+    .gnome-pic
+    {
+        padding-top: 18px;
+        padding-left: 4vw;
+        margin-right: -2vw;
+        width: 268px;
+        height: 266px;
+    }
+    
+    .titlescreen
+    {
+        width: 404px;
+        height: 254px;
+    }
+
+    .resume
+    {
+        /* This will stop bottom menu area from blocking text at */
+        /* end of resume                                         */
+        padding-bottom: 50px;
+        font-size: 2.5rem;
+    }
+    
+    .indented-text
+    {
+        text-indent: 1.6rem;
+    }
+    
+    .underlined-section
+    {
+        font-size: 2.25rem;
+    }
+    
+    .underlined-section-other
+    {
+        font-size: 2.25rem;
+        padding-top: 1rem;
+    }
+    
+    .job
+    {
+        padding-top: 1rem; /* Give spacing between jobs */
+    }
+    
+    .bold-employer
+    {   
+        font-size: 2.125rem;
+    }
+    
+    .bold-duties
+    {   
+        font-size: 2rem;
+    }
+        
+    .bold-awards
+    {   
+        font-size: 2rem;
+    }
+    
+    .contact
+    {   
+        /* Move move contact page futher up the screen and go over
+        hidden desktop menu text */
+        margin-top: -12.5px; 
+        /* This will stop bottom menu area from blocking text at */
+        /* end of contacts page                                  */
+        padding-bottom: 100px;
+    }
+    
+    .contact-label
+    {
+        font-size: 2.5rem;
+        margin-top: -22px;
+        margin-bottom: -1px;
+    }
+    
+    .contact-boxes
+    {
+        margin-bottom: 40px;
+    }
+    
+    input[type=text]
+    {
+        width: 89%;
+        height: 60px;
+        padding: 2px;
+        font-size: 3rem;
+    }
+    
+    textarea
+    {
+        width: 89%;
+        height: 250px;
+        padding: 2px;
+        margin-top: 2px;;
+        
+        resize: none;
+    }
+    
+    input[type=submit]
+    {   
+        height: 93px;
+        width: 186px;
+        font-size: 2.5rem;
+    }
+    
+    .submit-box
+    {
+        margin-top: -30px;
+        margin-bottom: 3px;
+    }
+
+    .connect
+    {   /* Move move contact page futher up the screen and go over
+        hidden desktop menu text */
+        margin-top: -15px;
+        padding-bottom: 160px;
+    }
+    
+    .connect-link-top
+    {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    
+    .connect-link-top a
+    {
+        font-size: 2.5rem;
+    }
+    
+    .connect-link
+    {
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+    
+    .connect-link a
+    {
+        font-size: 2.5rem;
+    }
+
+    textarea
+    {
+        height: 250px;
+    }
+
+    .menu-area
+    {
+        /* increase size of non-desktop-menu in tablet mode*/
+        max-height: 5.625rem;
+        padding-top: 0.9375rem;
+        padding-bottom: 1.375rem;
+        font-size: 2.8125rem;
+    }
+
+    /* Describe appearance of slide up menu*/
+    .slide-up-content a
+    {   
+        /* increase size of non-desktop-menu in tablet mode*/
+        max-height: 5.625rem;
+        padding-top: 0.9375rem;
+        padding-bottom: 1.375rem;
+        font-size: 2.8125rem;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    div.desktop-menu
+    {   
+        visibility: visible; /* Show desktop menu in desktop mode */
+    }
+
+    /* Adjust appearace of desktop menu*/
+    .desktop-menu a
+    {   
+        color: #95AB63;
+        font-size: 1.5rem;
+        padding-top: 25px;
+        padding-bottom: 11px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 4.4vw;
+        margin-right: 4.4vw;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    /* change appearance of link on hover*/
+    .desktop-menu a:hover
+    {
+        border-bottom: 5px #95AB63 solid;
+    }
+
+    /* Increase size of greeting again in desktop mode */
+    div.greeting
+    {
+        font-size: 3rem;
+        max-width: 462px;
+        height: 234px;
+        padding-top: 75px;
+        margin-bottom: 370px;
+    }
+
+    .bio-text
+    {   
+        max-width: 751px;
+    }
+
+    .projects
+    {
+        padding-top: 25px;
+    }
+
+    .connect
+    {
+        padding-top: 45px;
+    }
+
+    textarea
+    {
+        height: 312px;
+    }
+
+    div.non-desktop-menu
+    {
+        visibility: hidden; /* Hide bottom menu in desktop mode */
+    }
+}
