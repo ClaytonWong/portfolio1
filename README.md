@@ -120,3 +120,6 @@ https://www.figma.com/file/MlmBGrWQVEGnExpPOuqw86p0/portfolio
 
 site deployed at:
 https://decorator-lorna-61415.netlify.com
+
+site with robots.txt and sitemap.xml at:
+https://purchasing-officer-admiralty-30862.netlify.com
