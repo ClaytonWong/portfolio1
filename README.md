@@ -108,8 +108,8 @@ To implement the sliding menu, I did the following
 2) Found out how to create a slide up or drop up menu from Stack-overflow
 3) Adapted the code I found from those websites to my needs
 
-To unblock text that was covered by the bottom menubar, I had to approad the instructor for help and find the 
-solution on the internet. Eventually, I sended up using a solution that involved placing padding at the bottom 
+To unblock text that was covered by the bottom menubar, I had to approach the instructor for help and find the 
+solution on the internet. Eventually, I ended up using a solution that involved placing padding at the bottom 
 of various parts of my code.
 
 To position content in places where I wanted them, I had to use padding and adjust margin values in various 
